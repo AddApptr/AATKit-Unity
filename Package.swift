@@ -20,7 +20,7 @@ let package = Package(
     ],
     dependencies: [
         // Mark: Dependencies Begin
-        .package(url: "https://github.com/AddApptr/AATKit.git", exact: "3.18.0-beta2"),
+        .package(url: "https://github.com/AddApptr/AATKit.git", exact: "3.18.0-beta3"),
         // Mark: Dependencies End
     ],
     // Mark: Targets
@@ -31,6 +31,7 @@ let package = Package(
                     .product(name: "AATKit-Core", package: "AATKit"),
                     "AATUnityAdapter",
                     "AATUnityAds",
+                    "AATUnityCoherenceLib",
                     // Mark: Target Dependencies End
                 ],
                 path: "./Sources/AATKit-Unity"),
@@ -38,13 +39,18 @@ let package = Package(
         // Mark: Binary Targets
         .binaryTarget(
             name: "AATUnityAdapter",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta2/AATUnityAdapter.zip",
-            checksum: "ccd155f366ab4f3267983298ef8c172ce8110cd6c11f5764963761299bf77203"
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/AATUnityAdapter.zip",
+            checksum: "cf48797feedda76e9f0c6adbcd75406c80946452ee32f62c212257e4ca2686ea"
         ),
         .binaryTarget(
             name: "AATUnityAds",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta2/UnityAds.zip",
-            checksum: "44599b424075ddcca4e5bdbc6183611be9c822d7f88003139c0e024bf54c8f21"
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/UnityAds.zip",
+            checksum: "6a3724776cf3a1ed003bf08ab827bdc3e93686f49b605f6b366a27f74b1ed742"
+        ),
+        .binaryTarget(
+            name: "AATUnityCoherenceLib",
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/UnityCoherenceLib.zip",
+            checksum: "1eeae955204a748d2ea1cadc2d2b370f3b02fbd7ab45deff3f1dad813b0afea9"
         ),
     ]
 )
