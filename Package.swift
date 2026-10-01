@@ -20,7 +20,7 @@ let package = Package(
     ],
     dependencies: [
         // Mark: Dependencies Begin
-        .package(url: "https://github.com/AddApptr/AATKit.git", exact: "3.18.0-beta3"),
+        .package(url: "https://github.com/AddApptr/AATKit.git", exact: "3.18.0"),
         // Mark: Dependencies End
     ],
     // Mark: Targets
@@ -39,18 +39,18 @@ let package = Package(
         // Mark: Binary Targets
         .binaryTarget(
             name: "AATUnityAdapter",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/AATUnityAdapter.zip",
-            checksum: "cf48797feedda76e9f0c6adbcd75406c80946452ee32f62c212257e4ca2686ea"
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0/AATUnityAdapter.zip",
+            checksum: "9a33e1a41fd29424fb2b7a71727009346a6e536abf74becdd90eb144fa0c90c3"
         ),
         .binaryTarget(
             name: "AATUnityAds",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/UnityAds.zip",
-            checksum: "6a3724776cf3a1ed003bf08ab827bdc3e93686f49b605f6b366a27f74b1ed742"
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0/UnityAds.zip",
+            checksum: "b2b11cda258512e18d207fd736328f1b20fbdef265003ce0b2f161cc89020f66"
         ),
         .binaryTarget(
             name: "AATUnityCoherenceLib",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/UnityCoherenceLib.zip",
-            checksum: "1eeae955204a748d2ea1cadc2d2b370f3b02fbd7ab45deff3f1dad813b0afea9"
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0/UnityCoherenceLib.zip",
+            checksum: "ad69f9bf2eee3ed8ade8610af2d4959b7160b2f692730183f4b35b6efb5b1ed4"
         ),
     ]
 )
